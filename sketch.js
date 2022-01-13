@@ -35,7 +35,7 @@ function copyColor() {
   let array = grid.color.levels
   array.pop()
   let string = array.map(x => x.toString(16).padStart(2, '0')).join('').toUpperCase()
-  paragraph.innerText = '0x' + string
+  paragraph.innerText = '#' + string
   paragraph.select()
   document.execCommand('copy')
 }
